@@ -1,0 +1,106 @@
+﻿.pokemonShelf {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #49d0b0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shelfHeader {
+  width: 100%;
+  padding: 50px 20px 0px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.imageIcon {
+  width: 17px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemonShelf .name {
+  margin: 0 0 6px;
+}
+
+.pokemonShelf .number {
+  color: #fff;
+  font-size: 13px;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.pokemonShelf .types {
+  display: flex;
+  gap: 8px;
+}
+
+.shelfStatistics {
+  height: 50%;
+  width: 100%;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  padding: 50px 20px 25px;
+}
+
+.shelfStatistics img {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  max-width: 226px;
+  width: 100%;
+}
+
+.statisticsMenu {
+  display: flex;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem:last-child {
+  text-align: right;
+}
+
+.menuItem:nth-child(3) {
+  text-align: right;
+}
+
+.menuItem {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+  white-space: nowrap;
+  color: #cfd1d2;
+  list-style: none;
+  border-bottom: 1px solid #cfd1d2;
+}
+
+.menuItem--selected {
+  color: #303a42;
+}
+
+@media screen and (min-width: 992px) {
+  .pokemonShelf {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
